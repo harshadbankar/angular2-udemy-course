@@ -1,2 +1,6 @@
-<p> {{ 'Server' }}  with ID {{ serverId }} is {{ serverStatus }}  - example with variables</p><br>
-<p> {{ 'Server' }}  with ID {{ serverId }} is {{ getServerStatus() }}  - example with method call in string interpolation</p><br>
+<!--- example with variables-->
+<p [ngStyle]="{backgroundColor: getColor() }"
+   [ngClass]="{online: serverStatus === 'online'}"> {{ 'Server' }}  with ID {{ serverId }} is {{ serverStatus }}</p><br>
+
+ <!--- example with method call in string interpolation-->
+<!--<p> {{ 'Server' }}  with ID {{ serverId }} is {{ getServerStatus() }} </p><br>-->
